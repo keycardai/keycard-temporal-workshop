@@ -24,6 +24,8 @@ cd "<package-path>"
 uv sync --locked --project temporal
 ```
 
+The Temporal lockfile pins `keycardai-temporal==0.8.0`. Use `--locked` to install the tested version.
+
 Complete the Expense Desk setup using the agent and MCP configuration supplied by Kim, including model access and the shared Ledger API. Ask Kim for any missing configuration before Exercise 01.
 
 ## Start your Temporal server

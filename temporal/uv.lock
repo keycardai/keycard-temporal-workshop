@@ -288,15 +288,15 @@ wheels = [
 
 [[package]]
 name = "keycardai-temporal"
-version = "0.6.0"
+version = "0.8.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "keycardai-oauth" },
     { name = "temporalio" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/05/bf/b1bc74d3f948a6d607146bd465856afc6c377cec889264d83452d1ee510e/keycardai_temporal-0.6.0.tar.gz", hash = "sha256:ec0e2994ef9bb0ce2bf72671ec0cb4628d8ca1822b108daf91d964b8a0d7d403", size = 32492, upload-time = "2026-10-08T17:23:04.273Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/56/75/a09c2dab0dc747ff29aecd0ba775093daaa430683990f47d2beb1a520757/keycardai_temporal-0.8.0.tar.gz", hash = "sha256:a1d10913dea1d852c9879c91d0ad874b59b25a5d41c7aa77bdeb42dbc37952b2", size = 36069, upload-time = "2026-10-09T20:29:17.28Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/24/cb/630d7800213b47bbb01cba1aefb58916d561a2229c50e645dd6d97276b37/keycardai_temporal-0.6.0-py3-none-any.whl", hash = "sha256:c2f8f99280cc10265e725a7f0a2daa25b05ca0d148a3abf118f24eae53a7f7de", size = 18927, upload-time = "2026-10-08T17:23:03.08Z" },
+    { url = "https://files.pythonhosted.org/packages/94/ad/b59ccaf2b13773ff002904384be8dc878d164043a55d43eca9bffc7ac1ce/keycardai_temporal-0.8.0-py3-none-any.whl", hash = "sha256:7362dd6e14d39a2d0b2392e8a7bd7f51cabf1f23989b337bba50445c0d0b9e69", size = 21072, upload-time = "2026-10-09T20:29:16.197Z" },
 ]
 
 [[package]]
@@ -308,7 +308,7 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "keycardai-temporal", specifier = ">=0.6.0" }]
+requires-dist = [{ name = "keycardai-temporal", specifier = ">=0.8.0" }]
 
 [[package]]
 name = "nexus-rpc"
