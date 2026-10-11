@@ -3,7 +3,7 @@
 
 Submit an expense, review someone else's, then see whether Expense Desk's Activity can tell you who did what.
 
-A fresh environment starts empty. Everyone using the same Ledger API shares its data, so you will see submissions and decisions as people work. Existing submissions remain when authentication changes. For this exercise, create your own expense and review another attendee's new submission.
+Everyone using the same Ledger API shares its data, and the shared Ledger API keeps that data across sandboxes, so the list may not be empty when you open it. The list shows submissions made with the shared key, and you will see new submissions and decisions as people work. Existing submissions remain when authentication changes. For this exercise, create your own expense and review another attendee's new submission.
 
 ## Submit an expense
 

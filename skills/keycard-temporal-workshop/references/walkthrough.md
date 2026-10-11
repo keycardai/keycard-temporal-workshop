@@ -4,9 +4,9 @@ Read the full exercise in the detected layout before giving commands. Follow its
 
 | Stage | Teaching point | Evidence |
 | --- | --- | --- |
-| 01 | A shared key authenticates access without verifying caller-supplied names. | Compare Created by (supplied name) with Identity details → Actor ID (masked shared API key). |
+| 01 | A shared key authenticates access without verifying caller-supplied names. | Compare Created by (supplied name) with Identity details → Actor ID (masked shared API key). The shared Ledger API keeps data across sandboxes; the starter list shows only shared-key submissions. |
 | 02 | The application authenticates as itself. | A new expense records the registered application despite a supplied username. Keycard Activity shows its credential request. |
-| 03 | A signed-in human remains the subject through the agent and MCP exchanges. | Approval or rejection of another attendee's eligible pending expense succeeds; self-approval fails. Inspect Expense Desk actors and both hops in Keycard Activity. |
+| 03 | A signed-in human remains the subject through the agent and MCP exchanges. | Approval or rejection of another attendee's eligible pending expense succeeds; self-approval fails. Inspect Expense Desk actors and both hops in Keycard Activity. Earlier shared-key submissions keep their supplied name and show Submitted via API key. |
 | 04 | Temporal resumes recorded progress; credentials belong inside activity executions. | The original workflow completes after worker restart; recorded debit is reused and the subsequent activity obtains a credential. |
 
 ## Runtime boundaries

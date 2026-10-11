@@ -162,6 +162,7 @@ function renderRows() {
     );
     const meta = el("span", undefined, "meta");
     meta.append(expenseIdButton(row.id), el("span", row.submitter_label || row.submitter));
+    if (row.unverified_submitter) meta.append(el("span", "Submitted via API key"));
     button.append(select, meta,
       el(
         "span",
@@ -205,7 +206,6 @@ function renderDetail(row, activity) {
     el("span", STATUSES[row.status] || row.status, "status"),
   );
   detail.append(heading, el("div", money(row.amount_cents), "amount"));
-  if (row.unverified_submitter) detail.append(el("p", "Unverified submitter", "muted"));
   updateFilterNotice();
   const fields = el("dl");
   for (const [name, value] of [
@@ -217,6 +217,7 @@ function renderDetail(row, activity) {
   ]) {
     if (value) fields.append(el("dt", name), el("dd", value));
   }
+  if (row.unverified_submitter) fields.children[1].append(" ", el("span", "Submitted via API key", "muted"));
   if (row.review) {
     detail.append(el("p", row.review.message));
     const version = JSON.stringify(row.review);

@@ -5,8 +5,7 @@
   --line: #dce2da;
   --paper: #fcfcf7;
   --ground: #f3f5ef;
-  --selected: #e4ecdf;
-  --hover: #eaf0e5;
+  --hover: #f3f5ef;
   --control: #a7b4a5;
   --green: #245a3c;
 }
@@ -318,7 +317,7 @@ select {
   padding: 16px 12px;
 }
 .expense-row[data-selected="true"] {
-  background: var(--selected);
+  box-shadow: inset 0 0 0 1.5px var(--ink);
   border-radius: 6px;
 }
 .expense-row .memo {
@@ -554,6 +553,6 @@ select {
   background-position: right 12px center, right 7px center;
 }
 
-.expense-row.unverified { border-left: 2px solid var(--line, #aaa); }
+.expense-row.unverified { background: #f7ecea; }
 
 #approve { margin-bottom: 20px; }
