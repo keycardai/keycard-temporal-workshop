@@ -342,7 +342,7 @@ async function loadList({ quiet = false } = {}) {
   } catch (error) {
     if (version === state.listVersion && epoch === state.epoch && error.name !== "AbortError") {
       $("list-state").classList.remove("loading");
-      $("list-state").textContent = "Expenses could not refresh. " + error.message + " Click Refresh to retry.";
+      $("list-state").textContent = "Expenses could not refresh. " + error.message;
       return false;
     }
     return true;
