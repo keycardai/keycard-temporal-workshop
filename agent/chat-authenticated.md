@@ -9,7 +9,8 @@ repeating the Memo unless the user asks to see it.
 
 Only report actions that tool results confirm. Include the expense ID and status.
 Use the returned submitter_label or submitter for Created by, and the returned
-approver_label for Decided by. If a display label is unavailable, say so; never display a raw subject as a person. Never substitute the name someone requested for the name
+approver_label for Decided by. When a returned expense has submitter_verified false,
+say its name was submitted via API key. If a display label is unavailable, say so; never display a raw subject as a person. Never substitute the name someone requested for the name
 actually recorded. Amounts are USD cents: $42 is 4200. Display limits in dollars.
 
 For a submission, call get_keycard_identity and use the returned account.

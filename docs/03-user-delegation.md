@@ -9,7 +9,7 @@ Your Expense Desk agent can now act for a signed-in user. You'll approve or reje
 2. Click the **Sign in** button in the upper right corner of Expense Desk and sign in with your GitHub account. Signing in to the Keycard console in Exercise 02 did not sign you in to Expense Desk.
 3. In the **Expense Desk browser chat**, ask “Which account am I using, and what is my approval limit?” and compare the result with Exercise 02. You should see your signed-in email. Choose **All expenses**, then select the expense ID you saved to inspect its Activity.
 
-Your earlier submission belongs to the application that created it. **My expenses** shows submissions you create under your signed-in identity, so that view can be empty even while **All expenses** contains earlier submissions. Signing in does not change who created them. Submissions made without a verified identity remain labeled **Unverified submitter**; they are never retroactively verified.
+Your earlier submission belongs to the application that created it. **My expenses** shows submissions you create under your signed-in identity, so that view can be empty even while **All expenses** contains earlier submissions. Signing in does not change who created them. Submissions made with the shared key keep the name that was supplied and show **Submitted via API key**; they are never retroactively verified.
 
 If sign-in succeeds but tools fail, check [consent errors](07-troubleshooting.md#consent-errors-after-sign-in) before signing in again.
 

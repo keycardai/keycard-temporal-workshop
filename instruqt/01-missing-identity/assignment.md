@@ -56,7 +56,7 @@ Click on the [button label="Expense Desk" background="#444CE7"](tab-0) tab to op
 
 Everyone in the workshop shares one Ledger API.
 You'll see other people's expenses appear as they work.
-A fresh environment starts empty, so don't worry if the list is blank when you first open it.
+The shared Ledger API keeps its data across sandboxes, so the list shows submissions made with the shared key and may not be blank when you first open it.
 
 Now that Expense Desk is open, you'll submit your first expense.
 

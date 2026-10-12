@@ -70,7 +70,7 @@ That expense still belongs to the application that created it.
 Signing in doesn't change who created earlier expenses.
 
 **My expenses** only shows expenses you create while signed in, so it can be empty even when **All expenses** isn't.
-Expenses created without a verified identity, like the ones from Exercise 01, stay labeled **Unverified submitter**.
+Expenses created with the shared key, like the ones from Exercise 01, keep the supplied name and show **Submitted via API key**.
 They never become verified later.
 
 **Note:** If sign-in works but the agent's tools fail, open `docs/07-troubleshooting.md` in the [button label="Editor" background="#444CE7"](tab-2) tab and follow **Consent errors after sign-in** before you sign in again.
