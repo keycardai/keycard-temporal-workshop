@@ -3,7 +3,7 @@ containers:
 - name: workshop
   # Pinned to a tested build: the tag is the commit SHA CI built it from.
   # To ship a new image, verify the build on a lab, then update this tag.
-  image: ghcr.io/keycardai/keycard-temporal-workshop-sandbox:dc74d7a689fcbed3340d37f1c404d7ff92771433
+  image: ghcr.io/keycardai/keycard-temporal-workshop-sandbox:cfce607c2d85a646ca269844346c71e819401453
   shell: /bin/bash
   memory: 4096
   ports:
