@@ -19,7 +19,11 @@ POLICY = (Path(__file__).parent / "expense-policy.md").read_text()
 
 class Assessment(BaseModel):
     outcome: Literal["approve", "human_review"]
-    message: str = Field(min_length=1, max_length=500)
+    message: str = Field(
+        min_length=1,
+        max_length=500,
+        description="One full sentence stating the business purpose and why it is eligible. Never repeat the memo alone.",
+    )
 
 
 async def assess(row: dict) -> Assessment:
@@ -28,7 +32,7 @@ async def assess(row: dict) -> Assessment:
             build_model(api_key="managed-by-keycard", http_client=http_client),
             output_type=Assessment,
             instructions=POLICY
-            + "\nReturn a concise reason, or a human referral. "
+            + "\nReturn a one-sentence reason that states the business purpose and why it is eligible, or a human referral. "
             "Input amount_cents is the Amount in USD cents. Assess only the Memo's business purpose; "
             "identity and amount authorization are enforced by code. Do not ask for the Submitter, "
             "Activity, receipts, or extra fields. Travel to a client office is a clear business purpose. "
